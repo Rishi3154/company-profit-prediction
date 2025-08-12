@@ -1,4 +1,3 @@
-# train_model.py
 
 import pandas as pd
 import numpy as np
@@ -13,21 +12,21 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import joblib
 import os
 
-# Load dataset
+
 url = "https://drive.google.com/uc?id=1Z7RKmScBO7n9vcDIG3Xeo853Ics4QFaF"
 data = pd.read_csv(url)
 
 X = data[["R&D Spend", "Administration", "Marketing Spend"]]
 y = data["Profit"]
 
-# Scale features
+
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X)
 joblib.dump(scaler, "models/scaler.pkl")
 
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.25, random_state=42)
 
-# Hyperparameter tuning
+
 knn_params = {"n_neighbors": [3, 4, 5, 6]}
 extra_params = {"n_estimators": [50, 100, 150]}
 
@@ -61,10 +60,10 @@ for name, model in models.items():
         best_model = model
         best_name = name
 
-# Save best model
+
 joblib.dump(best_model, "models/best_model.pkl")
 
-# Feature importance plot
+
 if hasattr(best_model, 'best_estimator_'):
     model_to_use = best_model.best_estimator_
 else:
