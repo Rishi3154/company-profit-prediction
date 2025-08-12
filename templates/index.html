@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profit Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Profit Prediction Dashboard</h1>
+        
+        <form method="post">
+            <input type="number" name="rd" placeholder="R&D Spend" step="any" required>
+            <input type="number" name="admin" placeholder="Administration Cost" step="any" required>
+            <input type="number" name="market" placeholder="Marketing Spend" step="any" required>
+            <button type="submit">Predict Profit</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">💰 Predicted Profit: ₹ {{ prediction }}</div>
+        {% endif %}
+        {% if error %}
+            <div class="result error">⚠️ {{ error }}</div>
+        {% endif %}
+
+        <hr>
+
+        <h3>📂 Upload CSV for Batch Prediction</h3>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="csv" accept=".csv" required>
+            <button type="submit">Upload & Download Prediction</button>
+        </form>
+
+        <hr>
+
+        <h3>📈 Feature Importance</h3>
+        <img src="/static/feature_importance.png" alt="Feature Importance" width="100%">
+
+        <h3>📉 Outlier Detection</h3>
+        <img src="/static/outliers.png" alt="Residual Plot" width="100%">
+    </div>
+</body>
+</html>
