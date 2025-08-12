@@ -18,7 +18,7 @@ This project predicts the **profit of a company** based on:
 ---
 
 ## 🛠️ Tech Stack
-- **Python 3.x**
+- **Python 3.12.4**
 - **Scikit-learn**
 - **Pandas, NumPy**
 - **Streamlit**
