@@ -28,29 +28,29 @@ An end-to-end Machine Learning web application that predicts a company's profit 
 ### Home Page
 
 <p align="center">
-  <img src="main.png" width="800">
+  <img src="screenshots/main.png" width="800">
 </p>
 
 ### Single Prediction
 
 <p align="center">
-  <img src="output.png" width="800">
+  <img src="screenshots/output.png" width="800">
 </p>
 
 ### Batch Prediction
 
 <p align="center">
-  <img src="batch1.png" width="800">
+  <img src="screenshots/batch1.png" width="800">
 </p>
 
 <p align="center">
-  <img src="batch2.png" width="800">
+  <img src="screenshots/batch2.png" width="800">
 </p>
 
 ### Feature Importance
 
 <p align="center">
-  <img src="features.png" width="800">
+  <img src="screenshots/features.png" width="800">
 </p>
 
 ---
@@ -65,20 +65,15 @@ Company-Profit-Prediction/
 ├── evaluation.py
 ├── requirements.txt
 ├── README.md
-│
-├── data/
-│   └── dataset.csv
+├──dataset.csv
 │
 ├── models/
 │   ├── best_model.pkl
 │   └── scaler.pkl
 │
-├── notebooks/
-│   └── Internship.ipynb
-│
-├── images/
-│
-└── outputs/
+├── Internship.ipynb
+├── screenshots/
+
 ```
 
 ---
@@ -207,9 +202,9 @@ The dataset contains historical company expenditure data with the following feat
 
 **Rishi Shah**
 
-📧 Email: *your-email@example.com*
+📧 Email: *shahrishi660@gmail.cpm*
 
-🔗 LinkedIn: https://linkedin.com/in/your-profile
+🔗 LinkedIn: www.linkedin.com/in/rishishah3154
 
 💻 GitHub: https://github.com/Rishi3154
 
