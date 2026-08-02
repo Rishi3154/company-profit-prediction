@@ -6,7 +6,7 @@ An end-to-end Machine Learning web application that predicts a company's profit 
 
 ## 🚀 Live Demo
 
-🔗 **Streamlit App:** *Coming Soon*
+🔗 **Streamlit App:** *https://company-profit-prediction-ml.streamlit.app/*
 
 ---
 
@@ -23,7 +23,6 @@ An end-to-end Machine Learning web application that predicts a company's profit 
 
 ## 🖥️ Application Preview
 
-> Add screenshots here after deployment.
 
 ### Home Page
 
